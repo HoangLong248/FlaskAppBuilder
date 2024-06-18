@@ -9,6 +9,8 @@ from flask_appbuilder.security.manager import (
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 
+RECAPTCHA_PUBLIC_KEY = "private"
+
 # Your App secret key
 SECRET_KEY = "Gbb1WJ3cieFTTISRdnPLQ"
 
@@ -46,7 +48,7 @@ AUTH_TYPE = AUTH_DB
 # AUTH_ROLE_PUBLIC = 'Public'
 
 # Will allow user self registration
-# AUTH_USER_REGISTRATION = True
+AUTH_USER_REGISTRATION = True
 
 # The default user self registration role
 # AUTH_USER_REGISTRATION_ROLE = "Public"
